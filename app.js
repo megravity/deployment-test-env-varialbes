@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 
 const city = "berlin";
 
-app.get("/", (req, rees) => {
+app.get("/", (req, res) => {
     res.send("<h1>Hello Render</h1>");
 });
 
