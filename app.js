@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 4000;
 
 const city = "berlin";
 
+app.get("/", (req, rees) => {
+    res.send("<h1>Hello Render</h1>");
+});
+
 app.get("/weather", async (req, res) => {
     // Proxy Server
     const response = await axios.get(
